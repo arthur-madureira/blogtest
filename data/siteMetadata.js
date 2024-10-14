@@ -9,11 +9,11 @@ const siteMetadata = {
   siteUrl: 'https://arthur-madureira.github.io/blogtest/',
   siteRepo: 'https://github.com/arthur-madureira/blogtest',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
+  // socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  // mastodon: 'https://mastodon.social/@mastodonuser',
+  // email: 'address@yoursite.com',
+  // github: 'https://github.com',
+  // x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
   // facebook: 'https://facebook.com',
   // youtube: 'https://youtube.com',
@@ -87,14 +87,14 @@ const siteMetadata = {
     kbarConfig: {
       searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // path to load documents to search
     },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
+    provider: 'algolia',
+    algoliaConfig: {
+      // The application ID provided by Algolia
+      appId: 'R2IYF7ETH7',
+      // Public API key: it is safe to commit it
+      apiKey: '599cec31baffa4868cae4e79f180729b',
+      indexName: 'docsearch',
+    },
   },
 }
 
